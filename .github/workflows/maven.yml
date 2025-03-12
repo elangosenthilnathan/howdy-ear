@@ -46,4 +46,5 @@ jobs:
       #run: mvn -B package --file pom.xml
       run: |
            curl https://cdn.shiftleft.io/download/sl > ./sl && chmod a+rx ./sl 
+           export SHIFTLEFT_ACCESS_TOKEN='eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhcGl2NCIsImlhdCI6MTczNjIwODg3MSwiaXNzIjoiU2hpZnRMZWZ0Iiwib3JnSUQiOiJlYmExNDY5MC1kNjA1LTRmODUtYjVlMy1iMjk5MmU5MTc0YjAiLCJ0b2tlbklEIjoiZDE3ZDRkOWEtOGNjMi00YTU2LWI0ZWQtYTk1NjYwMjYxNGY2Iiwic2NvcGVzIjpbImV4dGVuZGVkIl19.d_m8aMcSZ5qaV6FYf5dFu7-kkQWFoj9qyvLvh7EHngnRk_7jEBLYgBIFHULCBOa2e_pA_3QSJg9EMz98JVqr7yqg0oWliX3RCydhc6uBX6-5ZuaGChgh0lQ-S4TV30ZNZg1MpQIMNcro81K6Z0687PdJhFNCTvaHJXhYbVo9JIXN4YfyIzUr59bSYbHK0zRdFYpfOGrkglcfsRioJqCSGQtMpqB1_-b7HeRV8aGqekANkym_GdYVYSUz6eab0VVxbAFlT6yaE_B-We-po0sDugv0bljZdD5w73n0tVhG7hly2cq2WR174DhwitjYDPhzZrgOZ6K03Vnw5pk0IvYgaw'
            ./sl analyze --app testapp123ear --verbose --java ./ear/target/howdy-app.ear
