@@ -33,10 +33,7 @@ jobs:
            mvn clean package 
            jar -tvf ear/target/howdy-app.ear 
            find . -type f | grep ear
-           echo "+++++++++++++++++++++++++++++++++++++++++"
-           curl https://cdn.shiftleft.io/download/sl > ./sl && chmod a+rx ./sl 
-           ./sl analyze --app testapp123ear --verbose --java ear/target/howdy-app.ear
-           
+          
       
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
